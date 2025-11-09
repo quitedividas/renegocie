@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quitação de Dívidas - Somos os Melhores</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* ===== Reset básico ===== */
+        * { margin:0; padding:0; box-sizing:border-box; font-family: 'Roboto', sans-serif; }
+
+        body { background:#f4f4f9; color:#333; line-height:1.6; }
+
+        /* ===== Header ===== */
+        header {
+            background: url('images/header-banner.jpg') no-repeat center center/cover;
+            height: 70vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            color:#fff;
+            text-align:center;
+        }
+        header h1 { font-size:3rem; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); }
+        header p { font-size:1.5rem; margin-top:1rem; text-shadow: 1px 1px 6px rgba(0,0,0,0.5); }
+
+        /* ===== Seção de desconto ===== */
+        section.desconto {
+            background:#fff;
+            padding:60px 20px;
+            text-align:center;
+        }
+        section.desconto h2 { font-size:2.5rem; margin-bottom:20px; color:#2e7d32; }
+        section.desconto img { width:100%; max-width:600px; margin-top:20px; border-radius:10px; }
+
+        /* ===== Seção de serviços ===== */
+        section.servicos {
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            padding:60px 20px;
+            gap:40px;
+        }
+        .servico-card {
+            background:#fff;
+            padding:20px;
+            border-radius:10px;
+            text-align:center;
+            width:250px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .servico-card:hover { transform: translateY(-10px); }
+        .servico-card img { width:80px; margin-bottom:15px; }
+
+        /* ===== Depoimentos ===== */
+        section.depoimentos {
+            background:#e0f7fa;
+            padding:60px 20px;
+            text-align:center;
+        }
+        section.depoimentos h2 { font-size:2.5rem; margin-bottom:40px; color:#00796b; }
+        .depoimento-card {
+            display:inline-block;
+            background:#fff;
+            padding:20px;
+            margin:10px;
+            border-radius:10px;
+            width:280px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            vertical-align:top;
+        }
+        .depoimento-card img { width:80px; height:80px; border-radius:50%; margin-bottom:15px; }
+
+        /* ===== WhatsApp flutuante ===== */
+        .whatsapp-flutuante {
+            position:fixed;
+            bottom:20px;
+            right:20px;
+            z-index:100;
+        }
+        .whatsapp-flutuante a {
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            background:#25D366;
+            color:#fff;
+            width:60px;
+            height:60px;
+            border-radius:50%;
+            font-size:30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+            text-decoration:none;
+        }
+        .whatsapp-flutuante a:hover { transform: scale(1.1); }
+    </style>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div>
+            <h1>Quitação de Dívidas</h1>
+            <p>30% a 50% de desconto! Nós ajudamos você a quitar suas dívidas com segurança e rapidez!</p>
+        </div>
+    </header>
+
+    <!-- ===== SEÇÃO DE DESCONTO ===== -->
+    <section class="desconto">
+        <h2>Descontos Imperdíveis!</h2>
+        <p>Garanta já a quitação das suas dívidas com descontos de 30% a 50%.</p>
+        <img src="images/desconto.jpg" alt="Desconto de dívidas">
+    </section>
+
+    <!-- ===== SERVIÇOS ===== -->
+    <section class="servicos">
+        <div class="servico-card">
+            <img src="images/icone-dinheiro.png" alt="Dinheiro">
+            <h3>Quitação Rápida</h3>
+            <p>Resolva suas dívidas de forma rápida e segura, sem burocracia.</p>
+        </div>
+        <div class="servico-card">
+            <img src="images/icone-contrato.png" alt="Contrato">
+            <h3>Descontos Garantidos</h3>
+            <p>Oferecemos descontos reais de 30% a 50% para quitar suas dívidas.</p>
+        </div>
+        <div class="servico-card">
+            <img src="images/icone-satisfeito.png" alt="Satisfação">
+            <h3>Clientes Satisfeitos</h3>
+            <p>Mais de 1000 clientes satisfeitos que conseguiram quitar suas dívidas.</p>
+        </div>
+    </section>
+
+    <!-- ===== DEPOIMENTOS ===== -->
+    <section class="depoimentos">
+        <h2>Depoimentos de Clientes</h2>
+        <div class="depoimento-card">
+            <img src="images/depoimento1.jpg" alt="Cliente 1">
+            <p>"Consegui quitar minhas dívidas com 40% de desconto. Recomendo demais!"</p>
+            <strong>- Maria S.</strong>
+        </div>
+        <div class="depoimento-card">
+            <img src="images/depoimento2.jpg" alt="Cliente 2">
+            <p>"Atendimento excelente e processo super rápido. Muito satisfeito!"</p>
+            <strong>- João P.</strong>
+        </div>
+        <div class="depoimento-card">
+            <img src="images/depoimento3.jpg" alt="Cliente 3">
+            <p>"Desconto real e ajuda profissional. Recomendo a todos que precisam quitar dívidas."</p>
+            <strong>- Ana L.</strong>
+        </div>
+    </section>
+
+    <!-- ===== WHATSAPP FLUTUANTE ===== -->
+    <div class="whatsapp-flutuante">
+        <a href="https://wa.me/5511980946705" target="_blank">📱</a>
+    </div>
+
+</body>
+</html>
+
